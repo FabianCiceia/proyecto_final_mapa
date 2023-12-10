@@ -1,0 +1,9 @@
+#map { 
+    
+    height: 500px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.imagen{
+    height: 100px;
+}

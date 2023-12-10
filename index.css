@@ -1,0 +1,31 @@
+
+/* Resetear los estilos predeterminados */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el menú */
+nav {
+  background-color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(153, 153, 153);
+}
+

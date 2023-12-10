@@ -1,0 +1,13 @@
+#map { 
+    
+    width: 80vh;
+    height: 80vh;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.imagen{
+    height: 100px;
+}
+.mapa_arquiler{
+    float: right;
+}
