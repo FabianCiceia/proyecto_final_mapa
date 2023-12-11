@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <script src="../datos_alquileres/alquileres.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <link rel="stylesheet" href="ingresar_mapa.css" />
+  <link rel="stylesheet" href="ingresarMapa.css" />
   <title>Terrenos S.A.</title>
  
   <nav class="menu">
@@ -28,6 +28,11 @@
 
 
   <form id="alquilerForm">
+    <label for="nombre">nombre:</label>
+    <input type="text" id="nombre"  required><br><br>
+
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion"  required><br><br>
 
     <label for="nroPiezas">Número de Piezas:</label>
     <input type="number" id="nroPiezas"  required><br><br>
@@ -47,13 +52,13 @@
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <script src="mapa_iniciar.js"></script>
-    <script src="mapa_puntero.js"></script>
+    <script src="mapaInicial.js"></script>
+    <script src="mapaPuntero.js"></script>
 
     <div id="errorEnvio">Carga los datos correspondientes</div>
     <button class="botonEnviar" type="submit">Enviar</button> 
   </form>
-  <script src="cargar_datos.js"></script>
+  <script src="leerDatos.js" defer></script>
  
 
 </body>

@@ -7,12 +7,7 @@ var iconoCasa = L.icon({
     popupAnchor: [0, -38] // Punto donde se abre el popup
   });
 
-var iconoEdificio = L.icon({
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/1259/1259805.png', // Ruta de tu icono personalizado
-    iconSize: [38, 38], // Tamaño del icono
-    iconAnchor: [19, 38], // Punto de anclaje del icono
-    popupAnchor: [0, -38] // Punto donde se abre el popup
-});
+
 
 // Función para controlar la visibilidad de los marcadores según el nivel de zoom
 function controlarVisibilidadMarcadores() {
