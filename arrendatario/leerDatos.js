@@ -43,10 +43,11 @@ function subirDatos(event) {
   
   var nuevoAlquiler =  {nombre:`${nombre}`, descripcion: `${descripcion}`, nroPiezas: `${nroPiezas}`, precioMensual:`${precioMensual}`,depositoGarantia: `${depositoGarantia}`,nroContacto: `${nroContacto}`,latitud:`${latitud}`,longitud:`${longitud}` };
   datosAlquileres.push(nuevoAlquiler);
+  localStorage.setItem('datosAlquileres', JSON.stringify(datosAlquileres));
   errorEnvio.innerHTML = `Se han cargado los datos correctamente`;
   errorEnvio.classList.add('correcto');
   errorEnvio.classList.remove('error');
-  console.log( 'Cantidad de datos: '+datosAlquileres.length);
+  console.log(datosAlquileres);
   
 
 
