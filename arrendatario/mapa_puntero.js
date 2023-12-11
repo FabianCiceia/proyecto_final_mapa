@@ -1,14 +1,16 @@
+
+var latitud, longitud;
+
 var marker;
 map.on('click', function(e) {
   if (marker) {
-    map.removeLayer(marker); // Eliminar marcador existente si hay uno
+    map.removeLayer(marker);
   }
 
-  marker = L.marker(e.latlng).addTo(map); // Agregar un nuevo marcador
-  var lat = e.latlng.lat;
-  var lng = e.latlng.lng;
+  marker = L.marker(e.latlng).addTo(map);
 
-  console.log("[" + lat + "," + lng + "]"); // Mostrar en consola
+  // Actualiza las variables globales con los valores de latitud y longitud
+  latitud = e.latlng.lat;
+  longitud = e.latlng.lng;
 
-  // Aquí puedes enviar estas variables (lat y lng) a tu servidor o realizar otras acciones con ellas
 });
