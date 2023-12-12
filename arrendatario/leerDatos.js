@@ -17,6 +17,7 @@ var precioMensual;
 var depositoGarantia;
 var nroContacto;
 
+form.addEventListener('submit', subirDatos);
 function subirDatos(event) {
   event.preventDefault(); 
     descripcion = descripcionInput.value
@@ -33,18 +34,13 @@ function subirDatos(event) {
     errorEnvio.classList.remove('correcto');
     return;
   }
-  console.log('descripcion: ', descripcion)
-  console.log('Número de Piezas:', nroPiezas);
-  console.log('Precio Mensual:', precioMensual);
-  console.log('Depósito de Garantía:', depositoGarantia);
-  console.log('Número de Contacto:', nroContacto);
-  console.log('Latitud:', latitud);
-  console.log('Longitud:', longitud);
-  
+
+  datosAlquileres = JSON.parse(localStorage.getItem('datosAlquileres'));
   var nuevoAlquiler =  {nombre:`${nombre}`, descripcion: `${descripcion}`, nroPiezas: `${nroPiezas}`, precioMensual:`${precioMensual}`,depositoGarantia: `${depositoGarantia}`,nroContacto: `${nroContacto}`,latitud:`${latitud}`,longitud:`${longitud}` };
   datosAlquileres.push(nuevoAlquiler);
   localStorage.setItem('datosAlquileres', JSON.stringify(datosAlquileres));
   errorEnvio.innerHTML = `Se han cargado los datos correctamente`;
+  
   errorEnvio.classList.add('correcto');
   errorEnvio.classList.remove('error');
   console.log(datosAlquileres);
@@ -54,6 +50,5 @@ function subirDatos(event) {
   
 }
 
-form.addEventListener('submit', subirDatos);
 
 

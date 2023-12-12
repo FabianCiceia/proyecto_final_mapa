@@ -40,9 +40,9 @@ map.on('zoomend', function () {
   } else if (currentZoom > 16) {
     newSize = [30, 30]; 
   } else if(currentZoom > 11){
-    newSize = [20, 20]; 
-  }else {
-    newSize = [10, 10];
+    newSize = [25, 25]; 
+  } else {
+ 
   }
 
   // Itera sobre los marcadores y actualiza el tamaño del icono
