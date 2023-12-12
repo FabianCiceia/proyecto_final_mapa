@@ -19,6 +19,24 @@
 </head>
 <body>
 <h1>Ayuda al cliente</h1>
+<!--Para limpiar lo que cargas -->
+<button id="Limpiar">Limpiar LocalStorage</button>
+<button id="cargardatos">Cargar los datos por defecto</button>
+<script src="../datos_alquileres/alquileres.js" defer></script>
+<script >
+  // Agregar un evento de clic al botón Limpiar
+  document.getElementById('Limpiar').addEventListener('click', function() {
+      // Limpiar el LocalStorage
+      localStorage.removeItem('datosAlquileres');
+
+      console.log("LocalStorage limpiado");
+      console.log(datosAlquileres);
+  });
+  document.getElementById('cargardatos').addEventListener('click', function() {
+  
+  });
+</script>
+<!--Para limpiar lo que cargas -->
 
 </body>
 </html>

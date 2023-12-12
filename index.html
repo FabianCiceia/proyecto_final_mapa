@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>Terrenos S.A.</title>
+  <script src="datos_alquileres/alquileres.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
  
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="mapa/principal_mapa.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
   
   <nav>
     <table id="menu">
@@ -22,31 +24,13 @@
  
 </head>
 <body>
-  <div id="contenido">
-    <div id="image-section">
-      <img src="imaa/alquiler.png" alt="Imagen" id="main-image">
-      <div id="text-container">
-        <h1>Alquileres S.A</h1>
-        <p>Fabi falta elejir una fond para que el proyecto se vea lindo, pero creo que es mejor que se haga ultimo</p>
-      </div>
-    </div>
-    <div id="oferta">
-      <div id="additional-section">
-        <table id="ofertaTabla">
-          <tr>
-            <td><img src="imaa/edificio1.jpeg" alt="Imagen 1" class="ofetaImagen"><p class="textInfo">Informacion de el depto, como precio localizacion y otras weas</p></td>
-            <td><img src="imaa/edificio2.jpeg" alt="Imagen 2" class="ofetaImagen"><p class="textInfo">Informacion de el depto, como precio localizacion y otras weas</p></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
+  
 
-  <div id="map">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="mapa/mapa_iniciar.js"></script>
-    <script src="mapa/mapa_marcador.js"></script>
-    <script src="mapa/mapa_puntero.js"></script>
-  </div>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="mapa/mapa_iniciar.js"></script>
+  <script src="mapa/mapa_marcador.js"></script>
+  <script src="mapa/mapa_puntero.js"></script>
+
 </body>
 </html>
