@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terrenos S.A.</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
- 
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="mapa/principal_mapa.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  
-  <nav>
-    <table id="menu">
-      <tr >
-        <td><a href="index.html">Inicio</a></td>
-        <td><a href="#">Alquileres</a></td>
-        <td><a href="help/help.html">Ayuda</a></td>
-        <td><a href="arrendatario/ingresar_arquiler.html">Arrendatario</a></td>
-      </tr>
-    </table>
-  </nav>
-
- 
 </head>
 <body>
+  <nav>
+    <div id="menu">
+      <div>
+        <a href="index.html">Inicio</a>
+        <a href="#">Alquileres</a>
+      </div>
+      <div>
+        <a href="help/help.html">Ayuda</a>
+      </div>
+    </div>
+  </nav>
+  
+
   <div id="contenido">
     <div id="image-section">
       <img src="imaa/alquiler.png" alt="Imagen" id="main-image">
       <div id="text-container">
         <h1>Alquileres S.A</h1>
-        <p>Fabi falta elejir una fond para que el proyecto se vea lindo, pero creo que es mejor que se haga ultimo</p>
+        <p>Fabi falta elegir una fuente para que el proyecto se vea lindo, pero creo que es mejor que se haga al final.</p>
       </div>
     </div>
+
     <div id="oferta">
-      <div id="additional-section">
+      <div id="ofertadiv">
+        <div class="arrow">&#8249;</div>
         <table id="ofertaTabla">
           <tr>
-            <td><img src="imaa/edificio1.jpeg" alt="Imagen 1" class="ofetaImagen"><p class="textInfo">Informacion de el depto, como precio localizacion y otras weas</p></td>
-            <td><img src="imaa/edificio2.jpeg" alt="Imagen 2" class="ofetaImagen"><p class="textInfo">Informacion de el depto, como precio localizacion y otras weas</p></td>
+            <td><img src="imaa/edificio1.jpeg" alt="Imagen 1" class="ofertaImagen"><p class="textInfo">Información del departamento, como precio, ubicación y otras características.</p></td>
+            <td><img src="imaa/edificio2.jpeg" alt="Imagen 2" class="ofertaImagen"><p class="textInfo">Información del departamento, como precio, ubicación y otras características.</p></td>
+            <td><img src="imaa/edificio3.jpeg" alt="Imagen 3" class="ofertaImagen"><p class="textInfo">Información del departamento, como precio, ubicación y otras características.</p></td>
           </tr>
         </table>
+        <div class="arrow">&#8250;</div>
       </div>
     </div>
   </div>
 
-  <div id="map">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="mapa/mapa_iniciar.js"></script>
-    <script src="mapa/mapa_marcador.js"></script>
-    <script src="mapa/mapa_puntero.js"></script>
-  </div>
+  <div id="map"></div>
+
+  <script src="mapa/mapa_iniciar.js"></script>
+  <script src="mapa/mapa_marcador.js"></script>
+  <script src="mapa/mapa_puntero.js"></script>
 </body>
 </html>

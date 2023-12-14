@@ -1,4 +1,3 @@
-
 /* Resetear los estilos predeterminados */
 body, ul {
   margin: 0;
@@ -9,63 +8,80 @@ body, ul {
 nav {
   background-color: #333;
   color: #fff;
-  top: 0px;
-  position:fixed ;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
+
 #menu {
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 #menu a {
   color: #fff;
   text-decoration: none;
   padding: 10px;
-  display: block;
-  
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-#contenido{
-  margin: 0;
+#menu a:hover {
+  color: #ffd700;
 }
 
-/*Seccion de imagen*/
+#menu div {
+  display: flex;
+  align-items: center;
+}
+
+#menu div a:first-child {
+  margin-left: 0; /* Eliminar el margen izquierdo para el primer enlace */
+}
+
+#menu div:last-child {
+  margin-left: auto; /* Empujar el último elemento hacia la derecha */
+}
+
+/* Sección de imagen */
 #image-section {
   position: relative;
   text-align: center;
-  
 }
 
 #main-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  height: auto;
+  object-fit: cover;
 }
 
 #text-container {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000000;
   text-align: center;
-  
 }
 
 #text-container h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  object-fit: cover; 
 }
 
 #text-container p {
   font-size: 18px;
 }
 
-/*Seccion de oferta*/
+/* Sección de oferta */
 #oferta {
-  background-color: #eee; /* Fondo de otro color */
+  background-color: #3f3e3e; 
   padding: 20px;
 }
 
@@ -74,24 +90,37 @@ nav {
   border-collapse: collapse;
 }
 
+#ofertadiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #ofertaTabla td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
 }
-.ofetaImagen {
+
+.ofertaImagen {
   width: 100px;
-  float: left;
   padding: 10px;
 }
 
 .textInfo {
   color: red;
-  font-size: 10px;
+  font-size: 14px;
 }
 
-#map{
-  top: 0% ;
-  position: static;
+/* Mapa */
+#map {
+  margin-top: 20px;
+  height: 300px;
+}
 
+/* Flechas de oferta */
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
 }
