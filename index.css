@@ -9,12 +9,13 @@ body, ul {
 nav {
   background-color: #333;
   color: #fff;
-  top: .5px;
-  position:fixed 0;
+  top: 0px;
+  position:fixed ;
+  width: 100%;
   z-index: 1;
 }
 #menu {
-  margin: 0 auto; /* Centro la tabla */
+  margin: 0 auto;
 }
 
 #menu a {
@@ -22,6 +23,7 @@ nav {
   text-decoration: none;
   padding: 10px;
   display: block;
+  
 }
 
 #contenido{
@@ -84,8 +86,8 @@ nav {
 }
 
 .textInfo {
-    color: red;
-   font-size: 10px;
+  color: red;
+  font-size: 10px;
 }
 
 #map{
