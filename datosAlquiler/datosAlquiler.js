@@ -1,7 +1,9 @@
 var datosAlquileres = 
 [
     {
+        "id":"0",
         "nombre": "Edificio Newton",
+        "imagen":"https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg",
         "descripcion": "Un apartamento con politica sin mascotas y con estacionamiento.",
         "nroPiezas": "1",
         "precioMensual": "500000",
@@ -11,7 +13,9 @@ var datosAlquileres =
         "longitud": "-55.88903903961182"
     },
     {
+        "id":"1",
         "nombre": "El azul",
+        "imagen":"https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg   ",
         "descripcion": "con politica, luz y agua incluido en el alquiler",
         "nroPiezas": "1",
         "precioMensual": "800000",
@@ -21,7 +25,9 @@ var datosAlquileres =
         "longitud": "-55.8876657485962"
     },
     {
+        "id":"2",
         "nombre": "San juan",
+        "imagen":"https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_1280.jpg",
         "descripcion": " agua incluido en el alquiler",
         "nroPiezas": "2",
         "precioMensual": "800000",
@@ -31,7 +37,9 @@ var datosAlquileres =
         "longitud": "-55.887789130210884"
     },
     {
+        "id":"3",
         "nombre": "Edificio San Miguel II",
+        "imagen":"https://cdn.pixabay.com/photo/2016/09/19/17/20/home-1680800_1280.jpg",
         "descripcion": "Un apartamento con politica sin mascotas",
         "nroPiezas": "1",
         "precioMensual": "850000",
@@ -41,7 +49,9 @@ var datosAlquileres =
         "longitud": "-55.88714003562928"
     },
     {
+        "id":"4",
         "nombre": "Edificio L",
+        "imagen":"https://cdn.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg",
         "descripcion": "Un apartamento con politica sin mascotas",
         "nroPiezas": "2",
         "precioMensual": "850000",
@@ -51,7 +61,9 @@ var datosAlquileres =
         "longitud": "-55.88535904884339"
     },
     {
+        "id":"5",
         "nombre": "Residencial Arminio",
+        "imagen":"https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_1280.jpg",
         "descripcion": "Un apartamento con politica sin mascotas",
         "nroPiezas": "4",
         "precioMensual": "2000000",
@@ -60,7 +72,9 @@ var datosAlquileres =
         "latitud": "-27.305272880732932",
         "longitud": "-55.89010655879975"
     },{
+        "id":"6",
         "nombre": "Edificio XYZ",
+        "imagen":"https://cdn.pixabay.com/photo/2021/02/02/16/18/apartment-5974511_1280.jpg",
         "descripcion": "Departamento cerca de parques",
         "nroPiezas": "3",
         "precioMensual": "950000",
@@ -70,7 +84,9 @@ var datosAlquileres =
         "longitud": "-55.88923245678412"
     },
     {
+        "id":"7",
         "nombre": "Residencial ABC",
+        "imagen":"https://cdn.pixabay.com/photo/2018/01/18/15/32/room-3090516_1280.jpg",
         "descripcion": "Amplio departamento con vista panorámica",
         "nroPiezas": "2",
         "precioMensual": "750000",
@@ -80,7 +96,9 @@ var datosAlquileres =
         "longitud": "-55.88812345678901"
     },
     {
+        "id":"8",
         "nombre": "Residencial Sunset",
+        "imagen":"https://cdn.pixabay.com/photo/2018/01/18/15/32/room-3090516_1280.jpg",
         "descripcion": "Moderno departamento con vista al atardecer",
         "nroPiezas": "3",
         "precioMensual": "1200000",
@@ -90,7 +108,9 @@ var datosAlquileres =
         "longitud": "-55.888359"
     },
     {
+        "id":"9",
         "nombre": "Edificio Green",
+        "imagen":"https://cdn.pixabay.com/photo/2016/11/30/08/46/living-room-1872192_1280.jpg",
         "descripcion": "Departamento ecológico con paneles solares",
         "nroPiezas": "2",
         "precioMensual": "900000",
@@ -99,7 +119,9 @@ var datosAlquileres =
         "latitud": "-27.307983",
         "longitud": "-55.888422"
     },{
+        "id":"0",
         "nombre": "Edificio A",
+        "imagen":"https://cdn.pixabay.com/photo/2017/02/07/18/16/living-room-2046668_1280.jpg",
         "descripcion": "Departamento en zona céntrica",
         "nroPiezas": "2",
         "precioMensual": "900000",
@@ -109,7 +131,9 @@ var datosAlquileres =
         "longitud": "-55.885750651359565"
     },
     {
+        "id":"11",
         "nombre": "El Mirador",
+        "imagen":"https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg",
         "descripcion": "Vista panorámica al río",
         "nroPiezas": "3",
         "precioMensual": "1200000",
@@ -119,7 +143,9 @@ var datosAlquileres =
         "longitud": "-55.885010361671455"
     },
     {
+        "id":"12",
         "nombre": "Residencial Oasis",
+        "imagen":"https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg",
         "descripcion": "Confortable departamento con áreas verdes",
         "nroPiezas": "2",
         "precioMensual": "950000",
@@ -129,7 +155,9 @@ var datosAlquileres =
         "longitud": "-55.88520348072053"
     },
     {
+        "id":"13",
         "nombre": "Edificio B",
+        "imagen":"https://cdn.pixabay.com/photo/2017/08/02/01/01/living-room-2569325_1280.jpg",
         "descripcion": "Apartamento con servicios incluidos",
         "nroPiezas": "1",
         "precioMensual": "700000",
@@ -139,7 +167,9 @@ var datosAlquileres =
         "longitud": "-55.88365316390992"
     },
     {
+        "id":"14",
         "nombre": "El Palmar",
+        "imagen":"https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg",
         "descripcion": "Zona tranquila y segura",
         "nroPiezas": "2",
         "precioMensual": "850000",
@@ -149,7 +179,9 @@ var datosAlquileres =
         "longitud": "-55.884790420532234"
     },
     {
+        "id":"15",
         "nombre": "Edificio C",
+        "imagen":"https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg",
         "descripcion": "Cerca de parques y comercios",
         "nroPiezas": "3",
         "precioMensual": "1100000",
@@ -159,7 +191,9 @@ var datosAlquileres =
         "longitud": "-55.88583648204804"
     },
     {
+        "id":"16",
         "nombre": "Residencial Plaza",
+        "imagen":"https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_1280.jpg",
         "descripcion": "Apartamento moderno con amenities",
         "nroPiezas": "1",
         "precioMensual": "750000",
@@ -169,7 +203,9 @@ var datosAlquileres =
         "longitud": "-55.88356733322144"
     },
     {
+        "id":"17",
         "nombre": "Edificio D",
+        "imagen":"https://cdn.pixabay.com/photo/2016/08/26/15/06/home-1622401_1280.jpg",
         "descripcion": "Cerca de transporte público",
         "nroPiezas": "2",
         "precioMensual": "800000",

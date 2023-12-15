@@ -1,0 +1,17 @@
+.arquiler{
+    border-radius: 5px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+}
+
+#alquileres{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(400px, 1fr)
+    )
+    ;
+    gap: 15px;
+}
