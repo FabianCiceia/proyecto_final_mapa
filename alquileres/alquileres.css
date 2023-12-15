@@ -27,7 +27,8 @@ body, ul {
 }
 nav{
   display: flex;
-  padding: 2% 6%;
+  padding: 1% 6%;
+  max-height: 100px; /* Altura máxima del logo */
   justify-content: space-between;
   align-items: center;
   
@@ -175,4 +176,7 @@ nav img{
     max-width: 280px;
     margin: auto;
   }
+  #logo {
+    max-width: 100px; /* Ancho máximo del logo */
   
+}
