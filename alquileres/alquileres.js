@@ -15,7 +15,6 @@ datosAlquileres.forEach(function(alquiler) {
         </div>
         
     `;
-    
 });
 
 document.getElementById('alquileres').innerHTML = alquileresHTML;
