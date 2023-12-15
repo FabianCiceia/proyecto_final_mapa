@@ -2,7 +2,7 @@
 var alquileres = L.marker([-27.30291, -55.96566])
 .addTo(map)
 .bindPopup("<b>Te Papa</b><br>Museum of New Zealand.")
-.openPopup();
+.openPopup();+
 */
 
 
@@ -22,11 +22,12 @@ function departamento(nombre, descripcion, nroPiezas, precioMensual, depositoGar
   marker.on('click', function () {
     document.getElementById('infoNombre').innerText = 'Casa ' + nombre;
     document.getElementById('infoDatos').innerText = descripcion +
-      '\nCon ' + nroPiezas + ' piezas' +
-      '\nCon un precio mensual de ' + precioMensual + ' Gs.' +
-      '\ny un depósito inicial de ' + depositoGarantia + ' Gs.'
-      '\nnumero de contacto' + nroContacto;
-    document.getElementById('info').style.backgroundImage  = `url(${imagen})`;
+      '\n\nCon '  + nroPiezas + ' piezas' +
+      '\nPrecio mensual: ' + precioMensual + ' Gs.' +
+      '\nDepósito inicial: ' + depositoGarantia + ' Gs.' +
+      '\n\nNumero de contacto: ' + nroContacto;
+    let fondo = document.getElementById('info');
+    fondo.style.backgroundImage  = `url(${imagen})`;
   });
 }
 

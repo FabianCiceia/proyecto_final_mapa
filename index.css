@@ -2,8 +2,6 @@
 /* Resetear los estilos predeterminados */
 body, ul {
   margin: 0;
-  margin-left: 5px;
-  margin-right: 5px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lulo Clean W01 One";
@@ -271,6 +269,7 @@ nav img{
   display: flex;
   justify-content: space-between;
   align-items: stretch; 
+  background-color: rgb(199, 197, 195);
 }
 
 #info {
@@ -281,12 +280,22 @@ nav img{
   background-repeat: no-repeat;
 }
 
-#info h3{
+#info h1{
   text-align: center;
-  
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  text-shadow: 0px 2px 2px rgb(0, 0, 0);
+
 }
-#info p {
+#infoDatos {
   line-height: 20px;
+  vertical-align: bottom;
+  font-weight:bolder;
+  color: #ffffff;
+  position: relative;
+  text-shadow: 0px 2px 2px rgb(0, 0, 0);
+  ;
 }
 #map {
   flex: 2;
