@@ -8,48 +8,67 @@ body, ul {
 }
 
 /* Estilos para el menú */
-nav {
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  top: 0;
+.menu{
+  min-height: 100vh;
   width: 100%;
-  z-index: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("imaa/alquiler.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-
-#menu {
-  margin: 0 auto;
+nav{
   display: flex;
+  padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
 }
-
-#menu a {
+nav img{
+  width: 150px;
+}
+.nav-links{
+  flex:1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
   color: #fff;
   text-decoration: none;
-  padding: 10px;
-  margin: 0 10px;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-size: 13px;
 }
-
-#menu a:hover {
-  color: #4d3bf5;
-}
-
-#menu div {
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
   display: flex;
-  align-items: center;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
 }
 
-#menu div a:first-child {
-  margin-left: 0;
+.text{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-
-#menu div:last-child {
-  margin-left: auto;
+.text h1{
+  font-size: 62px;
+}
+.text p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
 }
 
 /* Sección de imagen */
