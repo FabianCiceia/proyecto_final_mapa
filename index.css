@@ -1,9 +1,10 @@
+
 /* Resetear los estilos predeterminados */
 body, ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Lulo Clean W01 One";
 }
 
 /* Estilos para el menú */
@@ -79,10 +80,13 @@ nav {
 
 #intro p {
   font-size: 18px;
+  text-shadow: 7px 1px 8px rgb(255, 255, 255);
 }
 
 /*galeria*/
-
+#titleoferta {
+  text-align: center;
+}
 .galeria {
   display: flex;
   justify-content:space-between;
