@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Lista de Alquileres</title>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="mapa_iniciar.js" defer></script>
-    <script src="../datosAlquiler/datosAlquiler.js" defer></script>
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="alquileres.css" />
-   
+    <meta charset="UTF-8">
+    <title>Efecto Hover a Tres Imágenes</title>
+    <link href="https://db.onlinewebfonts.com/c/116d187134420de5733c7c45bbc80c46?family=Lulo+Clean+W01+One" rel="stylesheet" type="text/css"/>  
+    <link rel="stylesheet" href="alquileres.css">
 </head>
 <body>
     <section class="menu">
         <nav>
-            <a href="index.html">logo</a>
+            <a href="../index.html">logo</a>
             <div class="nav-links">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -21,131 +18,90 @@
                 </ul>
             </div>
         </nav>
-            <div class="text">
-            <h1>Alquileres S.A.</h1>
-            <p>Fabi mira que Bien queda asi todo, <br>pone tu mouse en los link del menu, hay niveles papaaa</p>
-        </div>
     </section>
-
-
-
-    <h1 >Lista de Alquileres</h1>
-    <div id="alquileres">
-        <div class="alquiler" id="arquiler.0" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg&quot;);"> 
-            
-            <h2>Edificio Newton</h2>
-            <p><strong>Descripción:</strong> Un apartamento con politica sin mascotas y con estacionamiento.</p>
-            <p><strong>Número de piezas:</strong> 1</p>
-            <p><strong>Precio mensual:</strong> 500000</p>
-            <p><strong>Depósito de garantía:</strong> 250000</p>
-            <p><strong>Número de contacto:</strong> 0981625487</p>
-        </div>
-        <div class="alquiler" id="arquiler.1" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg&quot;);"> 
-            
-            <h2>El azul</h2>
-            <p><strong>Descripción:</strong> con politica, luz y agua incluido en el alquiler</p>
-            <p><strong>Número de piezas:</strong> 1</p>
-            <p><strong>Precio mensual:</strong> 800000</p>
-            <p><strong>Depósito de garantía:</strong> 1000000</p>
-            <p><strong>Número de contacto:</strong> 0981541234</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.3" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2016/09/19/17/20/home-1680800_1280.jpg&quot;);"> 
-            
-            <h2>Edificio San Miguel II</h2>
-            <p><strong>Descripción:</strong> Un apartamento con politica sin mascotas</p>
-            <p><strong>Número de piezas:</strong> 1</p>
-            <p><strong>Precio mensual:</strong> 850000</p>
-            <p><strong>Depósito de garantía:</strong> 500000</p>
-            <p><strong>Número de contacto:</strong> 0981658985</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.4" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg&quot;);"> 
-            
-            <h2>Edificio L</h2>
-            <p><strong>Descripción:</strong> Un apartamento con politica sin mascotas</p>
-            <p><strong>Número de piezas:</strong> 2</p>
-            <p><strong>Precio mensual:</strong> 850000</p>
-            <p><strong>Depósito de garantía:</strong> 500000</p>
-            <p><strong>Número de contacto:</strong> 0981658658</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.5" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_1280.jpg&quot;);"> 
-            
-            <h2>Residencial Arminio</h2>
-            <p><strong>Descripción:</strong> Un apartamento con politica sin mascotas</p>
-            <p><strong>Número de piezas:</strong> 4</p>
-            <p><strong>Precio mensual:</strong> 2000000</p>
-            <p><strong>Depósito de garantía:</strong> 1500000</p>
-            <p><strong>Número de contacto:</strong> 098165862</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.9" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2016/11/30/08/46/living-room-1872192_1280.jpg&quot;);"> 
-            
-            <h2>Edificio Green</h2>
-            <p><strong>Descripción:</strong> Departamento ecológico con paneles solares</p>
-            <p><strong>Número de piezas:</strong> 2</p>
-            <p><strong>Precio mensual:</strong> 900000</p>
-            <p><strong>Depósito de garantía:</strong> 800000</p>
-            <p><strong>Número de contacto:</strong> 0987123456</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.12" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_1280.jpg&quot;);"> 
-            
-            <h2>Residencial Oasis</h2>
-            <p><strong>Descripción:</strong> Confortable departamento con áreas verdes</p>
-            <p><strong>Número de piezas:</strong> 2</p>
-            <p><strong>Precio mensual:</strong> 950000</p>
-            <p><strong>Depósito de garantía:</strong> 850000</p>
-            <p><strong>Número de contacto:</strong> 0987987654</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.14" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg&quot;);"> 
-            
-            <h2>El Palmar</h2>
-            <p><strong>Descripción:</strong> Zona tranquila y segura</p>
-            <p><strong>Número de piezas:</strong> 2</p>
-            <p><strong>Precio mensual:</strong> 850000</p>
-            <p><strong>Depósito de garantía:</strong> 750000</p>
-            <p><strong>Número de contacto:</strong> 0987345678</p>
-          
-            
-
-        </div>
-
-        <div class="alquiler" id="arquiler.16" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_1280.jpg&quot;);"> 
-            
-            <h2>Residencial Plaza</h2>
-            <p><strong>Descripción:</strong> Apartamento moderno con amenities</p>
-            <p><strong>Número de piezas:</strong> 1</p>
-            <p><strong>Precio mensual:</strong> 750000</p>
-            <p><strong>Depósito de garantía:</strong> 700000</p>
-            <p><strong>Número de contacto:</strong> 0987987654</p>
-          
-            
-
-        </div>
-
-
-    </div>
     
+
+
+    <div class="galeria" id="alquiler">
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 1">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 1">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 1">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 1">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 1">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 2">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="contenedor">
+            <a href="#">
+                <div class="imagen">
+                    <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png" alt="Imagen 3">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
