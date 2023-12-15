@@ -3,7 +3,7 @@ var alquileresHTML = '';
 datosAlquileres.forEach(function(alquiler) {
 
 
-    alquileresHTML += `
+    alquileresHTML = `
         <div class="alquiler" id="arquiler.${alquiler.id}"> 
             
             <h2>${alquiler.nombre}</h2>
@@ -13,6 +13,8 @@ datosAlquileres.forEach(function(alquiler) {
             <p><strong>Depósito de garantía:</strong> ${alquiler.depositoGarantia}</p>
             <p><strong>Número de contacto:</strong> ${alquiler.nroContacto}</p>
           
+            
+
         </div>
         
     `;
