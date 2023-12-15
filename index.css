@@ -183,9 +183,30 @@ nav img{
   margin: auto;
 }
 
-
 /* Mapa */
+.mapa {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+}
+
+#info {
+  flex: 1; 
+  padding: 20px; 
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#info h3{
+  text-align: center;
+  
+}
+#info p {
+  line-height: 20px;
+}
 #map {
-  margin-top: 20px;
-  height: 300px;
+  flex: 2;
+  position: relative; 
+  height: 100%; 
 }
